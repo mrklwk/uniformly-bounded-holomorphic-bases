@@ -59,8 +59,6 @@ installing or changing them.
 Mark Lewko is the confirmed human author and responsible maintainer. Original
 project contributions are licensed under AGPL-3.0-only in LICENSE; NOTICE and
 third_party/licenses preserve the distinct upstream licenses and attribution.
-The approved research narrative is: “This formalization arose from the author’s
-research. The author intends to write a paper presenting the argument.”
 AI assistance and AI review remain disclosed separately; no human peer review
 is claimed.
 

@@ -1,6 +1,6 @@
 # Credits and attribution
 
-**Mathematical manuscript:** Mark Lewko, as identified in the supplied manuscript.
+**Author and responsible maintainer:** Mark Lewko.
 
 **Formalization process:** the Lean development was produced with OpenAI Codex
 under the mathematical project owner's direction. Its use of agent-generated
@@ -35,8 +35,6 @@ formalization is attributed to those authors.
 
 Git packaging operations are credited to OpenAI Codex, separately from the
 human authorship and maintainership recorded above.
-
-This formalization arose from the author’s research. The author intends to write a paper presenting the argument.
 
 Original project contributions are licensed under AGPL-3.0-only. Upstream
 implementation contributions and license texts retain their own terms and

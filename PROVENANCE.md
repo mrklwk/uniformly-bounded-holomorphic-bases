@@ -1,24 +1,21 @@
 # Provenance
 
-## Research origin
-
-This formalization arose from the author’s research. The author intends to write a paper presenting the argument.
+## Attribution
 
 Mark Lewko is the human author and responsible maintainer. AI assistance and
 review are described in CREDITS.md; no human peer review is claimed.
 
 ## Mathematical source
 
-Mark Lewko, *Uniformly bounded bases of homogeneous holomorphic polynomials*,
-September 12, 2026 revision. The main source theorem concerns every fixed d≥2
+The mathematical source is nonpublic. The main theorem concerns every fixed d≥2
 and every degree N≥0. Its displayed polynomial space is the span of the degree-N
 monomials on ℂᵈ; its measure is normalized surface measure on the complex unit
 sphere. The formal endpoint covers each homogeneous degree block, with a
 dimension-dependent constant uniform in degree; it does not include a formal
 Hardy-space completeness theorem. See docs/SCOPE.md.
 
-The proof was compared with the complete 550-line authenticated version-1 text.
-This was a text-reader transcript, not a verified original-byte download. Original
+Source comparison used authenticated text rather than a verified original-byte
+download. Original
 TeX byte identity and PDF reconciliation remain unresolved. No public manuscript
 URL, DOI, or arXiv identifier is assigned here without verification. The manuscript
 itself is not redistributed with this candidate.

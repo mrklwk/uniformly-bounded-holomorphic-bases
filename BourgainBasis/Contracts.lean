@@ -3,7 +3,7 @@ public import Mathlib
 
 @[expose] public section
 
-/-! Exact analytic target from the September 12 version 1 source.
+/-! Exact analytic target for the explicit basis construction.
 These are propositions, not asserted theorems. No target is assumed as an axiom.
 The explicit polynomial-basis contract is defined in BasisFormula and proved in Main.
 -/

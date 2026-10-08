@@ -1,8 +1,7 @@
 # Theorem-to-paper mapping
 
-Source: Mark Lewko's September 12, 2026 manuscript revision. Labels refer to that
-text, not to an inferred later publication. Lean names below use namespace
-`BourgainBasis`.
+The mathematical source is nonpublic. Lean names below use namespace
+`BourgainBasis`. Source locators identify the mathematical components.
 
 | Mathematical component | Source locator | Lean declaration / module | Scope |
 |---|---|---|---|

@@ -2,7 +2,7 @@
   "version": "v0.4",
   "project": {
     "name": "Explicit uniformly bounded bases of homogeneous holomorphic polynomials in every dimension",
-    "description": "This formalization arose from the author’s research. The author intends to write a paper presenting the argument. For every fixed complex dimension d at least two, this formalization constructs the specified orthonormal bases of homogeneous holomorphic polynomials in every degree N at least zero. On the complex unit sphere in C^d with surface measure normalized to mass one, the family has Kronecker-delta Gram integrals and spans the full degree-N monomial space. A positive constant depending only on d bounds every basis function on the closed complex Euclidean unit ball, uniformly in N. The explicit formula uses finite Fourier minors, increasing stars-and-bars indices, a square-root-of-two quadratic phase, and the normalization sqrt((N+d-1)!/((d-1)! product alpha_i!)). The proof includes anisotropic cancellation for the actual coupled quadratic form, full zero-extended Poisson finite differences, multinomial conditioning, and Gaussian evaluation of sphere moments. Here explicit refers to the basis formula, not an optimized numerical value of C_d.",
+    "description": "For every fixed complex dimension d at least two, this formalization constructs the specified orthonormal bases of homogeneous holomorphic polynomials in every degree N at least zero. On the complex unit sphere in C^d with surface measure normalized to mass one, the family has Kronecker-delta Gram integrals and spans the full degree-N monomial space. A positive constant depending only on d bounds every basis function on the closed complex Euclidean unit ball, uniformly in N. The explicit formula uses finite Fourier minors, increasing stars-and-bars indices, a square-root-of-two quadratic phase, and the normalization sqrt((N+d-1)!/((d-1)! product alpha_i!)). The proof includes anisotropic cancellation for the actual coupled quadratic form, full zero-extended Poisson finite differences, multinomial conditioning, and Gaussian evaluation of sphere moments. Here explicit refers to the basis formula, not an optimized numerical value of C_d.",
     "authors": [
       "Mark Lewko"
     ],
@@ -22,15 +22,15 @@
   },
   "sources": [
     {
-      "title": "Uniformly bounded bases of homogeneous holomorphic polynomials",
+      "title": "Nonpublic mathematical source",
       "authors": [
         "Mark Lewko"
       ],
       "type": "paper",
-      "location": "September 12, 2026 revision; main theorem and explicit Fourier-minor construction",
+      "location": "Main theorem and explicit Fourier-minor construction",
       "relationship": "formalizes",
       "author_endorsement": "participated",
-      "note": "The manuscript author directed the project. The complete authenticated version-1 text was reviewed. Original TeX file byte identity and PDF reconciliation remain unverified. No public identifier or manuscript redistribution permission is inferred."
+      "note": "Source comparison used authenticated text. Original TeX file byte identity and PDF reconciliation remain unverified. No source document is redistributed."
     },
     {
       "title": "On uniformly bounded bases in spaces of holomorphic functions",
