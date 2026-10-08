@@ -1,0 +1,33 @@
+Explicit uniformly bounded bases of homogeneous holomorphic polynomials in every dimension
+
+Copyright (c) 2026 Mark Lewko for original project contributions.
+Human author and responsible maintainer: Mark Lewko.
+
+Original project contributions are licensed under the GNU Affero General
+Public License, version 3 only (SPDX: AGPL-3.0-only). See LICENSE.
+They are provided without warranty as described in that license.
+
+This notice does not alter any upstream copyright, license or attribution.
+The project uses Lean and mathlib and their contributors' work. The pinned
+mathlib, plausible, LeanSearchClient, importGraph, proofwidgets, aesop, Qq
+and batteries repositories retain Apache-2.0. Cli retains MIT, including
+its Copyright (c) 2021 mhuisi notice. Their unmodified license texts and exact
+revision/hash inventory are in third_party/licenses. Their implementation
+files and the Lean/compiler binaries are not vendored in this source draft.
+Any upstream material remains subject to its own applicable notices and terms.
+
+OpenAI Codex assisted with formalization and checking. Claude supplied an
+independent AI review and a restatement adapted for the Challenge/Solution
+interface. These are AI contributions to the process, not human authorship
+or human peer review. See CREDITS.md and PROVENANCE.md for exact scope.
+
+The cited manuscript and papers retain their authors' rights. No manuscript
+redistribution or publication of this project is performed by this local update.
+
+Hosted validation adaptations:
+.github/workflows/validate.yml and scripts/verify-comparator.sh adapt the
+PalomarRegistry/PalomarTemplate CI workflow and Comparator script, consulted
+2026-10-07, https://github.com/PalomarRegistry/PalomarTemplate .
+That upstream material is Apache-2.0; see third_party/PalomarTemplate-LICENSE.
+Changes: manual-only trigger, Ubuntu 24.04, project build/log capture, exact
+AGPL metadata/license checks, and disabled optional Lean action features.

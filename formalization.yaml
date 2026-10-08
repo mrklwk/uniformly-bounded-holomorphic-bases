@@ -1,0 +1,115 @@
+{
+  "version": "v0.4",
+  "project": {
+    "name": "Explicit uniformly bounded bases of homogeneous holomorphic polynomials in every dimension",
+    "description": "This formalization arose from the author’s research. The author intends to write a paper presenting the argument. For every fixed complex dimension d at least two, this formalization constructs the specified orthonormal bases of homogeneous holomorphic polynomials in every degree N at least zero. On the complex unit sphere in C^d with surface measure normalized to mass one, the family has Kronecker-delta Gram integrals and spans the full degree-N monomial space. A positive constant depending only on d bounds every basis function on the closed complex Euclidean unit ball, uniformly in N. The explicit formula uses finite Fourier minors, increasing stars-and-bars indices, a square-root-of-two quadratic phase, and the normalization sqrt((N+d-1)!/((d-1)! product alpha_i!)). The proof includes anisotropic cancellation for the actual coupled quadratic form, full zero-extended Poisson finite differences, multinomial conditioning, and Gaussian evaluation of sphere moments. Here explicit refers to the basis formula, not an optimized numerical value of C_d.",
+    "authors": [
+      "Mark Lewko"
+    ],
+    "responsible_maintainers": [
+      "Mark Lewko"
+    ],
+    "license": "AGPL-3.0-only",
+    "release_decisions": "Human authorship, maintainership and AGPL-3.0-only for original project contributions approved. Upstream material retains its original licenses and notices. Palomar submission and registration have not occurred.",
+    "license_scope": "Original contributions: AGPL-3.0-only. External dependencies and retained third-party material remain under their upstream licenses; see NOTICE and third_party/licenses/inventory.json."
+  },
+  "classification": {
+    "arxiv": [
+      "math.CV",
+      "math.FA"
+    ],
+    "msc2020": []
+  },
+  "sources": [
+    {
+      "title": "Uniformly bounded bases of homogeneous holomorphic polynomials",
+      "authors": [
+        "Mark Lewko"
+      ],
+      "type": "paper",
+      "location": "September 12, 2026 revision; main theorem and explicit Fourier-minor construction",
+      "relationship": "formalizes",
+      "author_endorsement": "participated",
+      "note": "The manuscript author directed the project. The complete authenticated version-1 text was reviewed. Original TeX file byte identity and PDF reconciliation remain unverified. No public identifier or manuscript redistribution permission is inferred."
+    },
+    {
+      "title": "On uniformly bounded bases in spaces of holomorphic functions",
+      "authors": [
+        "Jean Bourgain"
+      ],
+      "id": "doi:10.1353/ajm.2016.0018",
+      "type": "paper",
+      "location": "Amer. J. Math. 138 (2016), 571–584",
+      "relationship": "background",
+      "note": "Background cited by the mathematical source, not a target-strength hypothesis in the proof. June 2015 preprint arXiv:1506.05694, section 3, attributes the question to W. Rudin; no original year is assigned. See docs/HISTORY.md for related results and dated open-problem context."
+    }
+  ],
+  "related_formalizations": [],
+  "status": {
+    "scope": "The full explicit degree-block theorem for each complex dimension d>=2 and each N>=0: normalized L2 sphere Gram identity, independent homogeneous monomial span, and a bound C_d uniform in degree on the closed complex unit ball. No Hardy-space model or completeness theorem for the union across degrees is formalized.",
+    "sorry_count": 0,
+    "sorry_in_definitions": 0,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "main_results": [
+      {
+        "declaration": "BourgainBasis.uniformly_bounded_homogeneous_basis",
+        "file": "BourgainBasis/Main.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "literature_dependencies": []
+      },
+      {
+        "declaration": "BourgainStatement.manuscript_main",
+        "file": "Solution.lean",
+        "sorry_count": 0,
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "literature_dependencies": []
+      }
+    ],
+    "sorry_count_note": "Zero in Solution and production proofs; exactly one deliberate theorem placeholder in the independent Challenge statement.",
+    "verification": "Lean 4.35.0-rc2; project-only fresh build with cached dependencies; direct Lean/NanoDa/con-ron checks passed; sandboxed Comparator startup blocked by missing bwrap.",
+    "dimension_one": "A separate d=1 monomial corollary with C_1=1 was checked on Lean 4.34.1; its integration into the verified 4.35 release remains pending. The current release endpoint is d>=2."
+  },
+  "automation": {
+    "methods": [
+      {
+        "method": "agent",
+        "framework": "OpenAI Codex",
+        "tool_setup": "Lean proof development with the installed compiler and mathlib cache; separate agent semantic and kernel audit."
+      }
+    ],
+    "notes": "Material proof generation and review used AI agents. Claude independently reviewed candidate 8eb23d7316bf3ed8eacb79f926d5b68a10a2a27d and supplied a restatement adapted for the Challenge/Solution interface. This is AI review, not human peer review. Subsequent packaging is checked separately."
+  },
+  "fidelity": {
+    "divergences": "The main theorem and explicit formula retain the manuscript quantifiers and normalization. Polynomial functions are represented as the independent span of degree-N monomials; orthonormality is expressed by actual Gram integrals plus spanning. The Poisson estimate uses a discrete proof. The separate arbitrary-SPD cancellation proposition and the entire continuous-Gamma appendix are not claimed. The actual coupled form I+11^T suffices and is proved. No uniform-in-d or optimal numerical constant is claimed. The exported endpoint is the finite basis of every homogeneous degree block, not a formal full-Hardy-space basis theorem."
+  },
+  "review": {
+    "status": "agent-reviewed",
+    "notes": "Independent Codex and Claude AI reviews found no mathematical gaps in their respective frozen snapshots. Claude reports a project-only fresh 63-module build against cached mathlib, 364 standard-axiom reports, twelve semantic checks, a 53,547-declaration main closure replay, an independent restatement, and unchanged candidate hashes at 8eb23d7316bf3ed8eacb79f926d5b68a10a2a27d. The follow-up packaging and Mathlib-only Challenge adaptation are separately tested locally. No human peer review, sandboxed Comparator acceptance or Palomar submission is claimed. PROVENANCE.md explains snapshot-specific closure counts. The separate migration to Lean 4.35.0-rc2 and mathlib 065356127b1dc0016f66b7283ce0ce2c4055aa55 passed 67 project modules, twelve semantic checks, 364 production axiom reports, replay of 53,772 declarations for two roots, exact elaborated Challenge/Solution type equality, and direct Lean checker/NanoDa/con-ron validation. Official Comparator could not start (exit 2: bwrap not found). Existing installed tools were reused; no installation or security change occurred."
+  },
+  "alignment": {
+    "namespace": "BourgainBasis",
+    "statements": [
+      {
+        "source": "Main theorem",
+        "lean": "uniformly_bounded_homogeneous_basis",
+        "module": "BourgainBasis.Main",
+        "status": "proved",
+        "note": "See docs/THEOREM_MAP.md for auxiliary scope."
+      }
+    ]
+  },
+  "acknowledgements": "Lean and mathlib and their contributors; mathematical background is attributed in CREDITS.md."
+}
