@@ -9,7 +9,7 @@
     "responsible_maintainers": [
       "Mark Lewko"
     ],
-    "license": "AGPL-3.0-only",
+    "license": "AGPL-3.0",
     "release_decisions": "Human authorship, maintainership and AGPL-3.0-only for original project contributions approved. Upstream material retains its original licenses and notices. Palomar submission and registration have not occurred.",
     "license_scope": "Original contributions: AGPL-3.0-only. External dependencies and retained third-party material remain under their upstream licenses; see NOTICE and third_party/licenses/inventory.json."
   },

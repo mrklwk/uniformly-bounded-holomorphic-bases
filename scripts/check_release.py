@@ -17,7 +17,11 @@ p = meta['project']
 assert p['name'] == read('README.md').splitlines()[0][2:]
 assert 0 < len(p['name']) <= 300 and 0 < len(p['description']) <= 10000
 assert p['authors'] == p['responsible_maintainers'] == ['Mark Lewko']
-assert p['license'] == 'AGPL-3.0-only'
+# Palomar's pinned Licensee reports the legacy AGPL-3.0 label for LICENSE.
+# The explicit original-contribution grant remains AGPL-3.0-only.
+assert p['license'] == 'AGPL-3.0'
+assert p['license_scope'].startswith('Original contributions: AGPL-3.0-only.')
+assert hashlib.sha256((root/'NOTICE').read_bytes()).hexdigest() == '591703f3827722d85142c1975f07c2f47956c57a216f570a5c356f6a956dbd78'
 # Exact approved AGPL-3.0 text: reject Apache/template or modified license text.
 assert hashlib.sha256((root/'LICENSE').read_bytes()).hexdigest() == 'd8a6cc31abc16b6748c7a21f21611f5a1ec33f67d22ca23d7da1c19b95496bee'
 assert meta['classification']['arxiv'] == ['math.CV', 'math.FA']
