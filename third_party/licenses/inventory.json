@@ -1,0 +1,83 @@
+[
+  {
+    "package": "mathlib",
+    "revision": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+    "upstream": "https://github.com/leanprover-community/mathlib4.git",
+    "license": "Apache-2.0",
+    "license_file": "third_party/licenses/mathlib/LICENSE",
+    "license_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "implementation_vendored": false
+  },
+  {
+    "package": "plausible",
+    "revision": "e50948299c4dc4a4c21b1c34b6a6a4fddc19f912",
+    "upstream": "https://github.com/leanprover-community/plausible",
+    "license": "Apache-2.0",
+    "license_file": "third_party/licenses/plausible/LICENSE",
+    "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "implementation_vendored": false
+  },
+  {
+    "package": "LeanSearchClient",
+    "revision": "95e037bfdc31d3916ac615446847fb01960e2719",
+    "upstream": "https://github.com/leanprover-community/LeanSearchClient",
+    "license": "Apache-2.0",
+    "license_file": "third_party/licenses/LeanSearchClient/LICENSE",
+    "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "implementation_vendored": false
+  },
+  {
+    "package": "importGraph",
+    "revision": "10930f8138f0462dbd744a91fc03a16fae0e046f",
+    "upstream": "https://github.com/leanprover-community/import-graph",
+    "license": "Apache-2.0",
+    "license_file": "third_party/licenses/importGraph/LICENSE",
+    "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "implementation_vendored": false
+  },
+  {
+    "package": "proofwidgets",
+    "revision": "4c70ac059693669e5756e32a7a94b57ee1e99dc5",
+    "upstream": "https://github.com/leanprover-community/ProofWidgets4",
+    "license": "Apache-2.0",
+    "license_file": "third_party/licenses/proofwidgets/LICENSE",
+    "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "implementation_vendored": false
+  },
+  {
+    "package": "aesop",
+    "revision": "75d936c7af167cc93fac0d31237682fc2204591d",
+    "upstream": "https://github.com/leanprover-community/aesop",
+    "license": "Apache-2.0",
+    "license_file": "third_party/licenses/aesop/LICENSE",
+    "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "implementation_vendored": false
+  },
+  {
+    "package": "Qq",
+    "revision": "786b7acdca7eb4e9c76c5d1d5bd810e7e5c56334",
+    "upstream": "https://github.com/leanprover-community/quote4",
+    "license": "Apache-2.0",
+    "license_file": "third_party/licenses/Qq/LICENSE",
+    "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "implementation_vendored": false
+  },
+  {
+    "package": "batteries",
+    "revision": "ed9b316aabe389fec1ef43c3326ab48c7e59be42",
+    "upstream": "https://github.com/leanprover-community/batteries",
+    "license": "Apache-2.0",
+    "license_file": "third_party/licenses/batteries/LICENSE",
+    "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "implementation_vendored": false
+  },
+  {
+    "package": "Cli",
+    "revision": "2842b9871b04862f944c032e34052cb9448ccb71",
+    "upstream": "https://github.com/leanprover/lean4-cli",
+    "license": "MIT",
+    "license_file": "third_party/licenses/Cli/LICENSE",
+    "license_sha256": "f7e95706807e931782b6efd9a9d2789508a52423ad67b56ee7e5e324362d4aac",
+    "implementation_vendored": false
+  }
+]
