@@ -51,13 +51,12 @@ and supplies `BourgainStatement.manuscript_main`. The adapted restatement origin
 in Claude’s review; that earlier review does not certify later edits.
 `scripts/check_layout.py` checks literal statement/definition agreement, import
 boundaries, placeholder isolation and packaging. This source-level check is not
-Comparator: the official comparison and independent NanoDa check remain pending.
+Comparator; the separate sandboxed Comparator result is recorded below.
 
 Once matching dependencies are already provisioned, the ordinary Lake entry is
 `lake build BourgainBasis Challenge Solution Verification`. The explicit offline
-compiler driver is the tested build route; no successful `lake build`, dependency
-rebuild, sandboxed Comparator run is implied. Direct exported-proof kernel checks are
-reported separately from the project-only compilation and replay.
+compiler driver gives a fresh project build against cached dependencies.
+The later sandboxed Comparator also completed its Lake build successfully.
 
 The original module-system candidate at `8eb23d7` passed 63 modules, twelve semantic
 checks and a 53,547-declaration main closure replay; Claude independently repeated
@@ -109,5 +108,6 @@ accepted 52,449 exported declarations. This exported closure is a different
 representation from the in-process two-root replay. The 356,286,889-byte export
 has SHA-256
 `84237ceda0a19771b60eebd04de339cb9f656fc5c0cdee4122765cdc8b611ef2`.
-The normal official Comparator invocation failed to start with exit 2 because
-`bwrap` is missing. Direct independent-kernel success is not that receipt.
+The public commit `2d23de9224f7f9436eaae70e4e1290cd39ef0592` passed sandboxed Comparator (exit 0) with Lean, NanoDa and con-ron. The installed off-PATH bubblewrap was selected through COMPARATOR_BWRAP; no security setting was changed. The full Palomar mechanical preflight is a separate requirement and remains pending.
+The sandboxed con-ron run accepted 52,453 declarations. The earlier direct-export
+count and hash above describe their own prior check, not this later export.

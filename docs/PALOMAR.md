@@ -29,25 +29,14 @@ statement definitions and theorem statements are unchanged. The pinned mathlib
 confirms the matching compiler. Reproducible project-only checks use the script
 in docs/VERIFICATION.md and already cached dependencies.
 
-## Official comparison still required
+## Comparator and complete mechanical preflight
 
-The installed 4.35.0-rc2 toolchain supplies `lake comparator`, `leanexport`,
-`leanchecker`, NanoDa and con-ron. The ordinary command
-`lake comparator --config comparator.json` was attempted in the isolated
-verification workspace and exited **2**, explicitly reporting that `bwrap` was
-not found. No theorem rejection occurred: the sandboxed comparison could not
-start. `bwrap` is absent from PATH and the checked standard binary locations,
-and the host's AppArmor unprivileged-user-namespace restriction remains enabled.
-No install, fake sandbox, `--inadvisably-no-sandbox`, security change or VM start
-was used. An already permitted sandboxed environment is still needed for the
-official end-to-end comparison.
+The public commit `2d23de9224f7f9436eaae70e4e1290cd39ef0592` passed sandboxed Comparator (exit 0) with Lean, NanoDa and con-ron. The installed off-PATH bubblewrap was selected through COMPARATOR_BWRAP; no security setting was changed. The full Palomar mechanical preflight is a separate requirement and remains pending.
 
-Separately, the complete elaborated Challenge/Solution types were byte-identical
-when read from independent environments. The fresh exported Solution theorem
-passed the installed Lean checker, NanoDa and con-ron. Those direct checks do
-not constitute sandboxed Comparator acceptance or Palomar registration. Exact
-commands, binary hashes, export hash and exit codes are retained in the local
-verification receipts.
+The manual workflow `.github/workflows/palomar-preflight.yml` calls the complete
+PalomarSubmission workflow at its pinned revision with mode full and profile
+palomar-standard-v1. Submission requires a mechanical report with status pass
+for the exact intended commit. Standalone Comparator is not that report.
 
 For future official checking, keep `external_kernels` out of the submitted
 comparator.json and follow the current trusted runner's configuration. The
@@ -65,7 +54,7 @@ is claimed.
 `formalization.yaml` is the release metadata in JSON (a valid YAML
 subset). Its authorship and license fields are approved, not placeholders.
 Historical Git identities and all frozen audit commits are preserved. Original
-manuscript byte/PDF reconciliation and the official sandboxed Comparator check
+manuscript byte/PDF reconciliation and complete Palomar mechanical preflight
 remain unresolved. Submission and registration have not occurred.
 
 ## Final local review boundary

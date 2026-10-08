@@ -37,12 +37,18 @@ for dep in manifest['packages']:
 for entry in json.loads(read('third_party/licenses/inventory.json')):
     assert pins[entry['package']] == entry['revision']
     assert hashlib.sha256((root/entry['license_file']).read_bytes()).hexdigest() == entry['license_sha256']
-w = json.loads(read('.github/workflows/validate.yml'))
+w = json.loads(read('.github/workflows/palomar-preflight.yml'))
 assert set(w['on']) == {'workflow_dispatch'}
 assert w['permissions'] == {'contents': 'read'}
-for job in w['jobs'].values():
-    assert job['runs-on'] == 'ubuntu-24.04'
-    for step in job['steps']:
-        if 'uses' in step: assert re.fullmatch(r'[^@]+@[0-9a-f]{40}', step['uses'])
+v = w['jobs']['verify']
+pin = 'd4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44'
+assert v['uses'] == 'PalomarRegistry/PalomarSubmission/.github/workflows/submission.yml@' + pin
+assert v['with']['pipeline_commit'] == pin
+assert v['with']['mode'] == 'full'
+assert v['with']['execution_profile'] == 'palomar-standard-v1'
+assert v['with']['commit'] == '${{ github.sha }}'
+options = json.loads(v['with']['options'])
+assert options['comparator_config_path'] == 'comparator.json'
+assert options['formalization_metadata_path'] == 'formalization.yaml'
 assert not (root/'formalization.yaml.draft').exists()
 print('PASS: release metadata, exact AGPL license, dependency/license pins, workflow pins and manual trigger')

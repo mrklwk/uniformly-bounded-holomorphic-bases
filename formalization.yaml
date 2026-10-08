@@ -79,7 +79,7 @@
       }
     ],
     "sorry_count_note": "Zero in Solution and production proofs; exactly one deliberate theorem placeholder in the independent Challenge statement.",
-    "verification": "Lean 4.35.0-rc2; project-only fresh build with cached dependencies; direct Lean/NanoDa/con-ron checks passed; sandboxed Comparator startup blocked by missing bwrap.",
+    "verification": "Lean 4.35.0-rc2; fresh 67-module public-source build and standard-axiom replay passed; sandboxed Comparator with Lean/NanoDa/con-ron passed on commit 2d23de9224f7f9436eaae70e4e1290cd39ef0592. Full Palomar mechanical preflight remains pending.",
     "dimension_one": "A separate d=1 monomial corollary with C_1=1 was checked on Lean 4.34.1; its integration into the verified 4.35 release remains pending. The current release endpoint is d>=2."
   },
   "automation": {
@@ -97,7 +97,7 @@
   },
   "review": {
     "status": "agent-reviewed",
-    "notes": "Independent Codex and Claude AI reviews found no mathematical gaps in their respective frozen snapshots. Claude reports a project-only fresh 63-module build against cached mathlib, 364 standard-axiom reports, twelve semantic checks, a 53,547-declaration main closure replay, an independent restatement, and unchanged candidate hashes at 8eb23d7316bf3ed8eacb79f926d5b68a10a2a27d. The follow-up packaging and Mathlib-only Challenge adaptation are separately tested locally. No human peer review, sandboxed Comparator acceptance or Palomar submission is claimed. PROVENANCE.md explains snapshot-specific closure counts. The separate migration to Lean 4.35.0-rc2 and mathlib 065356127b1dc0016f66b7283ce0ce2c4055aa55 passed 67 project modules, twelve semantic checks, 364 production axiom reports, replay of 53,772 declarations for two roots, exact elaborated Challenge/Solution type equality, and direct Lean checker/NanoDa/con-ron validation. Official Comparator could not start (exit 2: bwrap not found). Existing installed tools were reused; no installation or security change occurred."
+    "notes": "Independent Codex and Claude AI reviews found no mathematical gaps in their respective frozen snapshots. Claude reports a project-only fresh 63-module build against cached mathlib, 364 standard-axiom reports, twelve semantic checks, a 53,547-declaration main closure replay, an independent restatement, and unchanged candidate hashes at 8eb23d7316bf3ed8eacb79f926d5b68a10a2a27d. The follow-up packaging and Mathlib-only Challenge adaptation are separately tested locally. No human peer review or Palomar submission is claimed. PROVENANCE.md explains snapshot-specific closure counts. The separate migration to Lean 4.35.0-rc2 and mathlib 065356127b1dc0016f66b7283ce0ce2c4055aa55 passed 67 project modules, twelve semantic checks, 364 production axiom reports, replay of 53,772 declarations for two roots, exact elaborated Challenge/Solution type equality, and direct Lean checker/NanoDa/con-ron validation. The public commit 2d23de9224f7f9436eaae70e4e1290cd39ef0592 passed sandboxed Comparator (exit 0) with Lean, NanoDa and con-ron. The installed off-PATH bubblewrap was selected through COMPARATOR_BWRAP; no security setting was changed. The full Palomar mechanical preflight is a separate requirement and remains pending. Existing installed tools were reused; no installation or security change occurred."
   },
   "alignment": {
     "namespace": "BourgainBasis",

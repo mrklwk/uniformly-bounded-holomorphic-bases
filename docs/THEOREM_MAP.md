@@ -42,8 +42,9 @@ linear independence, excluding a vacuous reading of the Gram identity.
 `Verification/Closure.lean` verifies the logical closure of both main theorem
 roots. `comparator.json` selects the independent statement for a future official
 comparison. Direct NanoDa, Lean checker and con-ron validation passed on the
-4.35 exported Solution theorem. These checks do not constitute official
-sandboxed Comparator acceptance; that invocation could not start without bwrap.
+4.35 exported Solution theorem. A subsequent sandboxed
+Comparator run accepted public commit 2d23de9224f7f9436eaae70e4e1290cd39ef0592
+with all three kernels. Full Palomar mechanical preflight remains separate.
 
 ## Endpoint boundary
 

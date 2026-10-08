@@ -88,7 +88,6 @@ nor definitions changed. The older 4.34.1 checkpoints remain preserved.
 The migrated candidate was checked against the installed 4.35.0-rc2 compiler,
 with fresh project objects and cached pinned dependencies. Complete elaborated
 Challenge/Solution type equality and direct Lean/NanoDa/con-ron validation all
-passed. The official sandboxed Comparator invocation stopped at missing `bwrap`
-(exit 2). No security bypass or new installation was used.
+passed. The public commit `2d23de9224f7f9436eaae70e4e1290cd39ef0592` passed sandboxed Comparator (exit 0) with Lean, NanoDa and con-ron. The installed off-PATH bubblewrap was selected through COMPARATOR_BWRAP; no security setting was changed. The full Palomar mechanical preflight is a separate requirement and remains pending.
 
 Primary historical attribution is recorded in [docs/HISTORY.md](docs/HISTORY.md).
