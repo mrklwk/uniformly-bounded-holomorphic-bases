@@ -2,7 +2,7 @@
   "version": "v0.4",
   "project": {
     "name": "Explicit uniformly bounded bases of homogeneous holomorphic polynomials in every dimension",
-    "description": "For every fixed complex dimension d at least two, this formalization constructs the specified orthonormal bases of homogeneous holomorphic polynomials in every degree N at least zero. On the complex unit sphere in C^d with surface measure normalized to mass one, the family has Kronecker-delta Gram integrals and spans the full degree-N monomial space. A positive constant depending only on d bounds every basis function on the closed complex Euclidean unit ball, uniformly in N. The explicit formula uses finite Fourier minors, increasing stars-and-bars indices, a square-root-of-two quadratic phase, and the normalization sqrt((N+d-1)!/((d-1)! product alpha_i!)). The proof includes anisotropic cancellation for the actual coupled quadratic form, full zero-extended Poisson finite differences, multinomial conditioning, and Gaussian evaluation of sphere moments. Here explicit refers to the basis formula, not an optimized numerical value of C_d.",
+    "description": "We construct uniformly bounded orthonormal bases for the spaces of homogeneous holomorphic polynomials on complex unit spheres. For every fixed dimension d at least two and every degree N, the construction gives an explicit basis whose elements are bounded in absolute value by a constant depending only on d, independently of N. Orthonormality is with respect to surface measure normalized to have total mass one. The construction and proof are formalized in Lean.",
     "authors": [
       "Mark Lewko"
     ],
