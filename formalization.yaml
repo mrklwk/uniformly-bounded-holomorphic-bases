@@ -2,7 +2,7 @@
   "version": "v0.4",
   "project": {
     "name": "Explicit uniformly bounded bases of homogeneous holomorphic polynomials in every dimension",
-    "description": "We construct uniformly bounded orthonormal bases for the spaces of homogeneous holomorphic polynomials on complex unit spheres. For every fixed dimension d at least two and every degree N, the construction gives an explicit basis whose elements are bounded in absolute value by a constant depending only on d, independently of N. Orthonormality is with respect to surface measure normalized to have total mass one. The construction and proof are formalized in Lean.",
+    "description": "We construct uniformly bounded orthonormal bases for homogeneous holomorphic polynomials on complex unit spheres. Fix d >= 2 and N >= 0, and put m = d-1 and L = N+d-1. For each multi-index alpha = (alpha_1,...,alpha_d) of nonnegative integers with sum N, define s_b(alpha) = b + alpha_1 + ... + alpha_b, 1 <= b <= m, and the normalized monomial M_alpha(z) = sqrt((N+d-1)! / ((d-1)! alpha_1! ... alpha_d!)) z_1^alpha_1 ... z_d^alpha_d. Let F be the normalized Fourier matrix, with entries F_(t,s) = L^(-1/2) exp(2 pi i t s/L), for 1 <= t,s <= L. For each increasing m-element subset T = {t_1,...,t_m} of {1,...,L}, define P_T(z) = sum_(|alpha|=N) det[F_(t_a,s_b(alpha))] exp(2 pi i sqrt(2) sum_r alpha_r^2) M_alpha(z), where the determinant is over 1 <= a,b <= m. These polynomials form an orthonormal basis with respect to surface measure of total mass one on the complex unit sphere. Their absolute values on the closed unit ball are bounded by a constant depending only on d, independently of N and T. The construction and proof are formalized in Lean.",
     "authors": [
       "Mark Lewko"
     ],
